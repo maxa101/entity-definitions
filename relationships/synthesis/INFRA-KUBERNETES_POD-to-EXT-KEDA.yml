@@ -5,7 +5,7 @@ relationships:
       - Kubernetes Integration
     conditions:
       - attribute: eventType
-        anyOf: ["Metric"]
+        anyOf: [ "K8sPodSample" ]
       - attribute: entity.type
         anyOf: ["KUBERNETES_POD"]
     relationship:
