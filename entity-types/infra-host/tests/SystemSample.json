@@ -1,0 +1,368 @@
+[
+  {
+    "agentName": "Infrastructure",
+    "agentVersion": "1.67.3",
+    "aws.arn": "arn:aws:ec2:eu-central-1:905418226204:instance/i-0fbfdb555c4f787be",
+    "awsAccountId": "905418226204",
+    "awsAvailabilityZone": "eu-central-1c",
+    "awsRegion": "eu-central-1",
+    "cloudProvider": "aws",
+    "clusterName": "eu-charred-silica",
+    "coreCount": "64",
+    "cpuIOWaitPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 45.421075474645114,
+      "min": 0,
+      "max": 6.101662946778509,
+      "latest": 0
+    },
+    "cpuIdlePercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 24366.370435411143,
+      "min": 71.46558451693528,
+      "max": 99.95309715143335,
+      "latest": 99.4623151708403
+    },
+    "cpuPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 1133.6295645888595,
+      "min": 0.04690284856664416,
+      "max": 28.534415483064723,
+      "latest": 0.5376848291597062
+    },
+    "cpuStealPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "cpuSystemPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 149.70965561692347,
+      "min": 0.025019546520699258,
+      "max": 4.196420145333359,
+      "latest": 0.29385101128516233
+    },
+    "cpuUserPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 938.4988334972907,
+      "min": 0.003125390674471004,
+      "max": 26.558451693459666,
+      "latest": 0.24383381787454386
+    },
+    "diskFreeBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 820834342252544,
+      "min": 2884495331328,
+      "max": 3595531304960,
+      "latest": 3595528790016
+    },
+    "diskFreePercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 22614.461820876695,
+      "min": 79.46951800750142,
+      "max": 99.05897114227724,
+      "latest": 99.05890185411258
+    },
+    "diskReadUtilizationPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 636.1099404974365,
+      "min": 0,
+      "max": 16.617478403977874,
+      "latest": 0
+    },
+    "diskReadsPerSecond": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 163205.5313922301,
+      "min": 0,
+      "max": 16477.32386619331,
+      "latest": 0.05
+    },
+    "diskTotalBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 925570367016960,
+      "min": 3629687713792,
+      "max": 3629687713792,
+      "latest": 3629687713792
+    },
+    "diskUsedBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 104736024764416,
+      "min": 34156408832,
+      "max": 745192382464,
+      "latest": 34158923776
+    },
+    "diskUsedPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 2885.538179123305,
+      "min": 0.9410288577227539,
+      "max": 20.53048199249858,
+      "latest": 0.9410981458874201
+    },
+    "diskUtilizationPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 848.5723467656568,
+      "min": 0.1666750004166875,
+      "max": 18.134240045335602,
+      "latest": 0.33333333333333337
+    },
+    "diskWriteUtilizationPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 212.4624062682203,
+      "min": 0.00520666177715602,
+      "max": 7.250078578749574,
+      "latest": 0.33333333333333337
+    },
+    "diskWritesPerSecond": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 52036.4180890302,
+      "min": 1.0500525026251313,
+      "max": 4044.554455445544,
+      "latest": 1.9
+    },
+    "ec2AmiId": "ami-09a19df828c5951cc",
+    "entityGuid": "MXxJTkZSQXxOQXw0MDM1ODcyNTA2NjMyODU2OTE4",
+    "entityId": "4035872506632856918",
+    "entityKey": "i-0fbfdb555c4f787be",
+    "entityName": "ip-10-51-138-224.eu-central-1.compute.internal",
+    "fullHostname": "ip-10-51-138-224.eu-central-1.compute.internal",
+    "hostStatus": "running",
+    "hostname": "ip-10-51-138-224.eu-central-1.compute.internal",
+    "instanceType": "c7gd.16xlarge",
+    "kernelVersion": "5.10.244-240.965.amzn2.aarch64",
+    "label.Name": "eu-charred-silica-nrdb-dlqw-pool-7g-16xl-eu-central-1c",
+    "label.aws:autoscaling:groupName": "eu-charred-silica-nrdb-dlqw-pool-7g-16xl-eu-central-1c",
+    "label.aws:ec2:fleet-id": "fleet-040e3fa7-e0b7-4bbe-2492-868065e02ea9",
+    "label.aws:ec2launchtemplate:id": "lt-01d3b39b792c7546a",
+    "label.aws:ec2launchtemplate:version": "519818",
+    "label.aws:eks:cluster-name": "eu-charred-silica",
+    "label.department": "product",
+    "label.environment": "eu-production",
+    "label.k8s.io/cluster-autoscaler/node-template/label/local-volume.nr-ops.net/partitions": "1",
+    "label.k8s.io/cluster-autoscaler/node-template/label/local-volume.nr-ops.net/ssd-over-provision": "true",
+    "label.k8s.io/cluster-autoscaler/node-template/label/nr-ops.net/dedicated": "nrdb-dlqw-pool-7g-16xl",
+    "label.k8s.io/cluster-autoscaler/node-template/label/nrdb.nr-ops.net/tier": "disklight-query",
+    "label.k8s.io/cluster-autoscaler/node-template/label/topology.ebs.csi.aws.com/zone": "eu-central-1c",
+    "label.k8s.io/cluster-autoscaler/node-template/label/v1alpha1.local-volume.nr-ops.net/fs": "xfs",
+    "label.k8s.io/cluster-autoscaler/node-template/label/v1alpha1.local-volume.nr-ops.net/provider": "aws-nvme",
+    "label.k8s.io/cluster-autoscaler/node-template/resources/ephemeral-storage": "20Gi",
+    "label.k8s.io/cluster-autoscaler/node-template/taint/dedicated": "nrdb-dlqw-pool-7g-16xl:NoSchedule",
+    "label.kubernetes.io/cluster/eu-charred-silica": "owned",
+    "label.owning_team": "dirac",
+    "label.pool_name": "nrdb-dlqw-pool-7g-16xl",
+    "label.pool_type": "capi",
+    "label.product": "cell",
+    "label.service_name": "disklight-query",
+    "label.sigs.k8s.io/cluster-api-provider-aws/cluster/eu-charred-silica": "owned",
+    "label.sigs.k8s.io/cluster-api-provider-aws/role": "node",
+    "label.workload/istio": "TRUE",
+    "label.workload/query-only": "TRUE",
+    "linuxDistribution": "Amazon Linux 2",
+    "loadAverageFifteenMinute": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 1617.8,
+      "min": 3.74,
+      "max": 7.94,
+      "latest": 3.74
+    },
+    "loadAverageFiveMinute": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 1326.44,
+      "min": 1,
+      "max": 9.01,
+      "latest": 1
+    },
+    "loadAverageOneMinute": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 983.37,
+      "min": 0.01,
+      "max": 12.45,
+      "latest": 0.01
+    },
+    "memoryBuffers": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 436592640,
+      "min": 1712128,
+      "max": 1712128,
+      "latest": 1712128
+    },
+    "memoryCachedBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 15433800876032,
+      "min": 5243731968,
+      "max": 112580923392,
+      "latest": 5269827584
+    },
+    "memoryFreeBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 25978031669248,
+      "min": 77816213504,
+      "max": 128714153984,
+      "latest": 127276965888
+    },
+    "memoryFreePercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 19582.502807405934,
+      "min": 58.65864815337992,
+      "max": 97.02603006402151,
+      "latest": 95.94266315297082
+    },
+    "memoryKernelFree": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 15266125242368,
+      "min": 759230464,
+      "max": 124339412992,
+      "latest": 122877321216
+    },
+    "memorySharedBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 4533971554304,
+      "min": 6025216,
+      "max": 34367098880,
+      "latest": 6025216
+    },
+    "memorySlabBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 203944419328,
+      "min": 635138048,
+      "max": 1019965440,
+      "latest": 640253952
+    },
+    "memoryTotalBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 33828148224000,
+      "min": 132659404800,
+      "max": 132659404800,
+      "latest": 132659404800
+    },
+    "memoryUsedBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 7850116554752,
+      "min": 3945250816,
+      "max": 54843191296,
+      "latest": 5382438912
+    },
+    "memoryUsedPercent": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 5917.497192594067,
+      "min": 2.973969935978482,
+      "max": 41.34135184662008,
+      "latest": 4.05733684702918
+    },
+    "nr.cloudVmType": "AWS-EC2",
+    "nr.dataPointCount": 255,
+    "nr.entityType": "HOST",
+    "nr.ingestTimeMs": 1773420341000,
+    "nr.invalidAttributeCount": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 510,
+      "min": 2,
+      "max": 2,
+      "latest": 2
+    },
+    "operatingSystem": "linux",
+    "processorCount": "64",
+    "provider": "Ec2Instance",
+    "provider.awsAvailabilityZone": "eu-central-1c",
+    "provider.awsRegion": "eu-central-1",
+    "provider.ec2AmiId": "ami-09a19df828c5951cc",
+    "provider.ec2Architecture": "arm64",
+    "provider.ec2EbsOptimized": "false",
+    "provider.ec2Hypervisor": "xen",
+    "provider.ec2InstanceId": "i-0fbfdb555c4f787be",
+    "provider.ec2InstanceType": "c7gd.16xlarge",
+    "provider.ec2KeyName": "confab_production",
+    "provider.ec2PlacementGroupTenancy": "default",
+    "provider.ec2PrivateDnsName": "ip-10-51-138-224.eu-central-1.compute.internal",
+    "provider.ec2PrivateIpAddress": "10.51.138.224",
+    "provider.ec2RootDeviceName": "/dev/xvda",
+    "provider.ec2RootDeviceType": "ebs",
+    "provider.ec2State": "running",
+    "provider.ec2SubnetId": "subnet-0a6dd2a5e63cbc72c",
+    "provider.ec2VirtualizationType": "hvm",
+    "provider.ec2VpcId": "vpc-0e0af0229cfa38960",
+    "providerAccountId": "60918",
+    "providerAccountName": "cell-eu-charred-silica",
+    "swapFreeBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "swapInBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "swapOutBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "swapTotalBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "swapUsedBytes": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 0,
+      "min": 0,
+      "max": 0,
+      "latest": 0
+    },
+    "systemMemoryBytes": "132659404800",
+    "timestamp": 1773419841875,
+    "uptime": {
+      "type": "gauge",
+      "count": 255,
+      "sum": 1443810,
+      "min": 5027,
+      "max": 6297,
+      "latest": 6297
+    }
+  }
+]

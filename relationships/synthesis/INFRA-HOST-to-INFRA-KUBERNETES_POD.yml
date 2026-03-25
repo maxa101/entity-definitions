@@ -10,12 +10,59 @@ relationships:
       expires: PT75M
       relationshipType: CONTAINS
       source:
-        extractGuid:
-          attribute: host.guid
-          entityType:
-            value: HOST
+        lookupGuid:
+          candidateCategory: HOST
+          fields:
+            - field: hostName
+              attribute: nodeName
+            - field: clusterName
+              attribute: clusterName
       target:
         extractGuid:
           attribute: entityGuid
           entityType:
             value: KUBERNETES_POD
+
+  - name: otelKsmK8sHostContainsPod
+    # use kube-state-metrics kube_pod_info metric
+    version: "1"
+    origins:
+      - OpenTelemetry
+    conditions:
+      - attribute: metricName
+        anyOf: [ "kube_pod_info" ]
+      - attribute: k8s.pod.name
+        present: true
+      - attribute: k8s.namespace.name
+        present: true
+      - attribute: k8s.cluster.name
+        present: true
+      - attribute: k8s.node.name
+        present: true
+    relationship:
+      expires: PT75M
+      relationshipType: CONTAINS
+      source:
+        lookupGuid:
+          candidateCategory: HOST
+          fields:
+            - field: host.name
+              attribute: k8s.node.name
+            - field: k8s.cluster.name
+              attribute: k8s.cluster.name
+      target:
+        buildGuid:
+          account:
+            lookup: true
+          domain:
+            value: INFRA
+          type:
+            value: KUBERNETES_POD
+          identifier:
+            fragments:
+              - attribute: k8s.cluster.name
+              - value: ":"
+              - attribute: k8s.namespace.name
+              - value: ":"
+              - attribute: k8s.pod.name
+            hashAlgorithm: FARM_HASH

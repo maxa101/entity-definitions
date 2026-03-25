@@ -64,3 +64,49 @@ lookups:
       action: CREATE_UNINSTRUMENTED
       uninstrumented:
         type: HOST
+
+  - entityTypes:
+    - domain: INFRA
+      type: HOST
+    tags:
+      matchingMode: ALL
+      predicates:
+        # precise match for NR integration k8s nodes: hostname + cluster
+        - tagKeys: ["hostname"]
+          field: hostName
+        - tagKeys: ["clusterName"]
+          field: clusterName
+    onMatch:
+      onMultipleMatches: RELATE_ALL
+    onMiss:
+      action: NO_OP
+
+  - entityTypes:
+    - domain: INFRA
+      type: HOST
+    tags:
+      matchingMode: ALL
+      predicates:
+        # precise match for OTel k8s nodes: host.name + cluster
+        - tagKeys: ["host.name"]
+          field: host.name
+        - tagKeys: ["k8s.cluster.name"]
+          field: k8s.cluster.name
+    onMatch:
+      onMultipleMatches: RELATE_ALL
+    onMiss:
+      action: NO_OP
+
+  - entityTypes:
+    - domain: INFRA
+      type: HOST
+    tags:
+      matchingMode: ANY
+      predicates:
+        # fallback: matches OTel HOST entities without cluster context
+        - tagKeys: ["host.name"]
+          field: host.name
+    onMatch:
+      onMultipleMatches: RELATE_ALL
+    onMiss:
+      action: NO_OP
